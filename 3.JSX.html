@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <script src="js/react.development.js"></script>
+        <script src="js/react-dom.development.js"></script>
+        <script src="js/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/babel">
+            // type="text/babel": 浏览器不会解析这里的代码,babel就会读取到这里的内容,然后生成浏览器可识别的js代码
+            /**
+             * JSX
+             *  JavaScript XML
+             *  基于javascript的语言,融合了xml,我们可以在js中书写xml
+             *
+             *  xml: 可扩展标记语言
+             *  <users>
+             *      <user id="1">
+             *          <username>MoTao</username>
+             *      </user>
+             *      <user id="2">
+             *          <username>MoTao2</username>
+             *      </user>
+             *  </users>
+             */
+            ReactDOM.render(
+                // 这里的内容不会输出作为html进行解析, 只会作为字符串内容展示
+                <h1>Hello React!</h1>,
+                document.getElementById("app")
+            );
+        </script>
+    </body>
+</html>
